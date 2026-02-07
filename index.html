@@ -100,15 +100,15 @@
             margin-top: 150px; 
             display: flex;
             flex-direction: column;
-            /* CHANGE 1: Massive gap between rows */
-            gap: 200px; 
-            padding-bottom: 50px;
+            /* CHANGE 1: HUGE GAP (was 200px, now 400px) */
+            gap: 400px; 
+            padding-bottom: 100px;
         }
 
         .photo-pair {
             position: relative;
-            /* CHANGE 2: Massive height for "invisible box" */
-            height: 750px; 
+            /* CHANGE 2: TALLER BOX (was 750px, now 900px) */
+            height: 900px; 
             opacity: 0;
             transform: translateY(50px);
             transition: all 0.8s ease;
@@ -153,8 +153,8 @@
 
         .card-right {
             right: 5%;
-            /* CHANGE 3: Pushed way down so it doesn't cover face of first photo */
-            top: 250px; 
+            /* CHANGE 3: Pushed lower (was 250px, now 300px) */
+            top: 300px; 
             transform: rotate(4deg);
             z-index: 2;
         }
@@ -169,7 +169,7 @@
 
         /* POEM SECTION */
         .poem-card {
-            margin-top: 150px;
+            margin-top: 200px;
             margin-bottom: 100px;
             background: linear-gradient(145deg, #1a0b10, #2d0f15);
             padding: 40px 20px;
