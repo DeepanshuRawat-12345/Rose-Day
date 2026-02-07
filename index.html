@@ -97,17 +97,18 @@
 
         /* --- GALLERY STYLES --- */
         .gallery {
-            margin-top: 100px; 
+            margin-top: 150px; 
             display: flex;
             flex-direction: column;
-            gap: 150px; /* Huge gap between pairs */
+            /* CHANGE 1: Massive gap between rows */
+            gap: 200px; 
             padding-bottom: 50px;
         }
 
         .photo-pair {
             position: relative;
-            /* UPDATED: Increased height for tall selfies */
-            height: 650px; 
+            /* CHANGE 2: Massive height for "invisible box" */
+            height: 750px; 
             opacity: 0;
             transform: translateY(50px);
             transition: all 0.8s ease;
@@ -140,17 +141,9 @@
             display: block;
         }
 
-        /* Standard Landscape Style - reduced width slightly to help with height */
-        .landscape-card {
-            width: 60%;
-        }
+        .landscape-card { width: 60%; }
+        .portrait-card { width: 45%; }
 
-        /* Special Portrait Style */
-        .portrait-card {
-            width: 45%; 
-        }
-
-        /* Positioning */
         .card-left {
             left: 5%;
             top: 0;
@@ -160,8 +153,8 @@
 
         .card-right {
             right: 5%;
-            /* UPDATED: Pushed lower so faces aren't covered */
-            top: 180px; 
+            /* CHANGE 3: Pushed way down so it doesn't cover face of first photo */
+            top: 250px; 
             transform: rotate(4deg);
             z-index: 2;
         }
@@ -176,7 +169,7 @@
 
         /* POEM SECTION */
         .poem-card {
-            margin-top: 100px;
+            margin-top: 150px;
             margin-bottom: 100px;
             background: linear-gradient(145deg, #1a0b10, #2d0f15);
             padding: 40px 20px;
