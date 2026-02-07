@@ -97,17 +97,17 @@
 
         /* --- GALLERY STYLES --- */
         .gallery {
-            /* INCREASED SPACE HERE */
-            margin-top: 150px; 
+            margin-top: 100px; 
             display: flex;
             flex-direction: column;
-            gap: 120px; /* Big gap between pairs */
+            gap: 150px; /* Huge gap between pairs */
             padding-bottom: 50px;
         }
 
         .photo-pair {
             position: relative;
-            height: 400px; 
+            /* UPDATED: Increased height for tall selfies */
+            height: 650px; 
             opacity: 0;
             transform: translateY(50px);
             transition: all 0.8s ease;
@@ -140,14 +140,14 @@
             display: block;
         }
 
-        /* Standard Landscape Style */
+        /* Standard Landscape Style - reduced width slightly to help with height */
         .landscape-card {
-            width: 65%;
+            width: 60%;
         }
 
-        /* Special Portrait Style (For us5) */
+        /* Special Portrait Style */
         .portrait-card {
-            width: 45%; /* Narrower width for vertical photo */
+            width: 45%; 
         }
 
         /* Positioning */
@@ -160,7 +160,8 @@
 
         .card-right {
             right: 5%;
-            top: 80px;
+            /* UPDATED: Pushed lower so faces aren't covered */
+            top: 180px; 
             transform: rotate(4deg);
             z-index: 2;
         }
@@ -175,8 +176,7 @@
 
         /* POEM SECTION */
         .poem-card {
-            /* INCREASED SPACE HERE */
-            margin-top: 150px;
+            margin-top: 100px;
             margin-bottom: 100px;
             background: linear-gradient(145deg, #1a0b10, #2d0f15);
             padding: 40px 20px;
